@@ -1,0 +1,17 @@
+default-scenarios = ["normal", "extra-module"]
+
+normal {
+  title = "ABI change in common module"
+  apply-abi-change-to = "core/common/src/main/java/com/google/samples/apps/nowinandroid/core/thinking/DeepThought.kt"
+  tasks = [":App:assembleDemoDebug"]
+}
+
+extra-module {
+  title = "ABI change in common-impl module"
+  apply-abi-change-to = "core/common-impl/src/main/java/com/google/samples/apps/nowinandroid/core/thinking/DeepThoughtImpl.kt"
+  tasks = [":App:assembleDemoDebug"]
+}
+
+# Note: run on `extra-impl-module` branch.
+# The combination with git-checkout cleanup+build does not work, since
+#  `apply-abi-change-to` seems to run earlier than Git: https://github.com/gradle/gradle-profiler/issues/325

@@ -1,0 +1,11 @@
+default-scenarios = ["global_help", "module_help"]
+
+global_help {
+    title = "Global help"
+    tasks = ["help"]
+}
+
+module_help {
+    title = "Module help"
+    tasks = ["okhttp:help"]
+}

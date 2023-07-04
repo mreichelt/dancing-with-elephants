@@ -1,0 +1,23 @@
+default-scenarios = ["normal", "k2"]
+
+normal {
+  title = "Build okhttp on kotlin1.9 branch"
+  git-checkout = {
+    cleanup = "kotlin1.9"
+    build = "kotlin1.9"
+  }
+  gradle-args = ["--no-build-cache"]
+  cleanup-tasks = ["clean"]
+  tasks = ["okhttp:assemble"]
+}
+
+k2 {
+  title = "Build okhttp on k2 branch"
+  git-checkout = {
+    cleanup = "k2"
+    build = "k2"
+  }
+  gradle-args = ["--no-build-cache"]
+  cleanup-tasks = ["clean"]
+  tasks = ["okhttp:assemble"]
+}
