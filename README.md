@@ -3,7 +3,7 @@
 Talk given at [Droidcon Berlin 2023](https://berlin.droidcon.com/marc-reichelt/).
 
 - [Slides](https://docs.google.com/presentation/d/1zneUl5EzObFW85G7vcBqVVAZWm6AMFC6pMmaepi3DO0/edit?usp=sharing)
-- Video recording: will be added when available.
+- [Video recording](https://www.droidcon.com/2023/07/31/dancing-with-elephants-gradle-tips-and-tricks/)
 
 ## Talk Description
 
